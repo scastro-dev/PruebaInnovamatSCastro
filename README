@@ -1,0 +1,7 @@
+De ahora en adelante me referiré al conjunto de enunciado, respuestas, número de respuestas y respuesta correcta como "pregunta".
+- La clase Question almacena los datos de cada pregunta. De esta manera sería fácil añadir más respuestas en un futuro o cambiar el tipo de las mismas.
+- En el script Backend es donde se gestiona la obtención de preguntas y donde se encuentran los enunciados.
+- Dado que el comportamiento de de Enunciado y Respuestas era muy similar he decidido crear una clase NumberController de la que heredan las dos clases StatemeController y AnswerController.
+- En Number controller se encuentran todas las cosas que tienen en común como el campo Text y las animaciones de entrada y salida.
+- La clase StatementController es la encargada de controllar el enunciado y aunque no aporta nuevas funcionalidades si se encarga de avisar a GameManager de la finalización de sus animaciones.
+- La clase AnswerController sí tiene funcionalidades extras como el cambio de color y la gestión de la interaccionablidad de los botones.
